@@ -1,10 +1,10 @@
 import qrcode
 
 qr = qrcode.QRCode(
-    version=1,  #ขนาดของQRcode (1-40)
+    version=1,  #ขนาดของQRcodจาก1-40
     error_correction=qrcode.constants.ERROR_CORRECT_L, 
     box_size=10,  #ขนาดของแต่ละช่องในQRcod
-    border=4,  #อบขอQRcod
+    border=4,  #ชอบของqRcod
 )
 
 #ข้อมูลที่จะใส่QR
@@ -15,4 +15,4 @@ qr.make(fit=True)
 img = qr.make_image(fill_color="black", back_color="white")
 img.save("barbecued_code.png")
 
-print("QR code ได้ถูกสร้างและบันทึกเป็นไฟล์ barbecued_code.png")
+print("qRcode ได้ถูกสร้างและบันทึกเป็นไฟล์ barbecued_code.png")
